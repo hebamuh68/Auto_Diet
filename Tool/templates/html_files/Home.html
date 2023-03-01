@@ -1,0 +1,119 @@
+{%load static%}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Auto Diet</title>
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel ="stylesheet" type="text/css" href="{% static 'css/stl.css' %} ">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+
+<!-- =============================================== section 1 =================================================== -->
+
+    <div class="parent section1">
+        <img src="{% static 'images/bkg.png' %}" class="img img-fluid" alt="Responsive image">
+        <a><img class="logo" src="{% static 'images/logo.png' %}" alt=""></a>
+        <div class="text-over-img ">
+            <h1>Auto Diet</h1>
+            <p>
+                Personalized Diet Generator tool
+                <br>for a healthy life
+            </p>
+
+            <a href="#" class=" btn btn-light btn-lg explore" role="button" aria-pressed="true">Try It Now</a>
+        </div>
+    </div>
+
+<!-- =============================================== section 2 =================================================== -->
+    <div class="section2 ">
+        <h1 class="pe-5 pb-5"><u class="underLine">From Fecal</u> Sample to Designed Diet</h1>
+        <img src="{%static 'images/chart.png'%}" class="pt-5 img img-fluid" alt="Responsive image">
+    </div>
+
+<!-- =============================================== section 3 =================================================== -->
+    <div class="section3 pt-5 pb-5">
+        <h1 class="text-center pt-5" style="color: white; margin-left:0"><u class="underLine">Frequently</u> asked
+            questions </h1>
+
+        <div class="QA pt-5 container">
+            <div class="justify-content-md-center pb-5 col-12 pt-5">
+
+                <!-- =============================================== Q1 =================================================== -->
+                <div>
+                    <h4 class="question1">What should I eat to be healthy?</h4>
+                    <p class=" answer1">
+                        <br>
+                        - The answer to this seemingly simple question is not simple at all, nor is it the same
+                        across people of different ages, sizes, food environments, and internal microbial milieus
+                        known as the microbiome.
+                        <br><br>
+                        - According to precision nutrition, each person may respond differently to particular foods
+                        and nutrients, meaning that the optimum diet for one person may look substantially different
+                        from the best diet for another.
+                    </p>
+                </div>
+                <!-- =============================================== Q2 =================================================== -->
+                <div class="pt-5">
+                    <h4 class="question2">What’s the role of gut microbiome in human health?</h4>
+                    <p class="answer2">
+                        <br>
+                        - Gut microbiota describes the different microbe populations present in your large intestine,
+                        including bacteria, archaea, and viruses. It has evolved alongside humans to get to where we are
+                        today, living in a mutually beneficial relationship.
+                        <br><br>
+                        - Some bacteria are beneficial because they provide an essential function for health, like the
+                        production of vitamins or butyrate. Others are deemed probiotic when they contribute several
+                        important functions, like Bifidobacterium and Lactobacillus.
+                        <br><br>
+                        - We also have small amounts of opportunistic microbes, which have the ability to make us sick
+                        if
+                        they aren't controlled by the rest of our microbiota.
+                    </p>
+                </div>
+                <!-- =============================================== Q3 =================================================== -->
+                <div class="pt-5">
+                    <h4 class="question3">What’s gut microbiome disorder?</h4>
+                    <p class="answer3 pb-5">
+                        <br>
+                        - A great deal of research has produced evidence that gut microbiota disorder (also called
+                        dysbiosis) and its metabolites play a key role in maintaining host intestinal homeostasis and
+                        influencing the development of many diseases, including neurodegenerative diseases,
+                        cardiovascular
+                        diseases, metabolic diseases, and gastrointestinal diseases. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- =============================================== section 4 =================================================== -->
+<div class="footer text-center col-12 pt-4 pb-3">
+    <h4>Auto Diet is developed on Cloudflare Pages and built with Django</h4>
+</div>
+
+    <!-- ================================================================================================== -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- ================================================================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script> 
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins';
+}
+
+.logo {
+    position: absolute;
+    margin-left: -94%;
+    margin-top: 3%
+}
+
+/*======================================= Section 1  ================================================*/
+
+.img {
+    z-index: 0;
+}
+
+.section1 h1 {
+    position: relative;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 149.113px;
+    line-height: 114%;
+
+
+    color: #FFFFFF;
+
+    margin-top: -40%;
+    margin-left: 10%;
+}
+
+.section1 p {
+    position: relative;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25.6154px;
+    line-height: 114%;
+    /* or 29px */
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    margin-left: 10%;
+}
+
+.section1 .btn {
+
+    padding: 20px 55px;
+    margin-top: 2%;
+    margin-left: 10%;
+
+    background-color: #609966 !important;
+    border: 2px solid #F87171;
+    border-radius: 20px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    font-size: 16px;
+    color: white;
+}
+
+.section1 .btn:hover {
+    background-color: #F87171 !important;
+    border: 2px solid #F87171;
+
+}
+
+/*===================================================== Section 2 ================================================*/
+
+h1 {
+    margin-left: 10%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 114%;
+
+    color: #000000;
+}
+
+.section2 h1 {
+    margin-top: 27%;
+}
+
+.underLine {
+    text-decoration-color: #F87171;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+}
+
+.section2 img {
+    margin-left: 10%;
+
+}
+
+/*===================================================== Section 3 ================================================*/
+
+.section3 {
+    margin-top: 8%;
+    background-color: #609966 !important;
+    color: white;
+}
+
+.QA h4 {
+    margin-left: 10%;
+    padding: 20px 0px;
+
+    border-top: 2px solid #F8C4B4;
+    border-bottom: 2px solid #F8C4B4;
+    width: 90%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 114%;
+
+    cursor: pointer;
+}
+
+.QA p {
+    margin-left: 10%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.8831px;
+    line-height: 180%;
+}
+
+.answer1 {
+    display: none;
+}
+
+.answer2 {
+    display: none;
+}
+
+.answer3 {
+    display: none;
+}
+
+/*===================================================== footer ================================================*/
+
+.footer h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #181D16;
+
+}
