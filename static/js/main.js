@@ -14,5 +14,8 @@
         });
     }
 
-
+    function Navigate() {
+        window.location.href = 'results.html';
+        return false;
+        }
 })();
