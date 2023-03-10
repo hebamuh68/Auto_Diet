@@ -1,5 +1,4 @@
-# Auto_Diet
-Django website
+https://user-images.githubusercontent.com/69214737/224438919-7af39a7b-c4a8-47f8-8db4-c92c849b7020.mp4
 
 ![Home](https://user-images.githubusercontent.com/69214737/222288773-77b2ed8e-d8f7-4f91-8151-6e7f95301885.png)
 
