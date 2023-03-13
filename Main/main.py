@@ -4,39 +4,39 @@ import toolchest_client as toolchest
 from ReadBracken import Bracken_To_Csv
 
 
-def GetAbundance():
-    parser = argparse.ArgumentParser(description='Get the bacterial abundance from a metagenomic file...')
-    parser.add_argument("infile", help='A metagenomic file in fastq format...')
-    parser.add_argument("--output", help='A path to where you want the output file be...')
-    args = parser.parse_args()
-
+def Get_Abundance(input_file_path, output_folder_path):
     toolchest.set_key("MTQ0NWE.NGUxMWFhMzctNGRkOS00OWM1LWJhMTUtNzg2NTU2NDE1OWJh")
 
-    input_file = args.infile
-
-    if args.output:
-        output_folder = args.output
-    else:
-        output_folder = input_file[:input_file.find('.fastq')]
-        os.mkdir(output_folder)
-
     toolchest.kraken2(
-        inputs=input_file,
-        output_path=output_folder,
+        inputs=input_file_path,
+        output_path=output_folder_path,
         database_name="standard",
         database_version="1"
     )
 
-    bracken_input_file_name = [name for name in os.listdir(output_folder) if name == 'kraken2_report.txt']
+    bracken_input_file_name = [name for name in os.listdir(output_folder_path) if name == 'kraken2_report.txt']
 
     toolchest.bracken(
-        kraken2_report=os.path.join(output_folder, bracken_input_file_name[0]),
-        output_path=output_folder,
+        kraken2_report=os.path.join(output_folder_path, bracken_input_file_name[0]),
+        output_path=output_folder_path,
         database_name="standard",
         database_version="1"
     )
 
-    bracken_file_path = os.path.join(output_folder, 'output.bracken')
-    csv_file_path = os.path.join(output_folder, 'abundance.csv')
+    bracken_file_path = os.path.join(output_folder_path, 'output.bracken')
+    csv_file_path = os.path.join(output_folder_path, 'abundance.csv')
 
     Bracken_To_Csv(bracken_file_path, csv_file_path)
+
+
+# =======================================================================================
+# Get the latest file uploaded
+with open('PATH.txt') as f:
+    for line in f:
+        pass
+    last_line = line
+
+input_file = last_line.rstrip()
+output_folder = input_file.split("/")[-1].split('.')[0]
+
+Get_Abundance(input_file, output_folder)
