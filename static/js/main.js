@@ -1,6 +1,5 @@
 (function () {
   "use strict";
-
     for(let i = 1; i < 4; i++)
     {
         const question = document.querySelector(`.question${i}`);
@@ -13,9 +12,4 @@
           }
         });
     }
-
-    function Navigate() {
-        window.location.href = 'results.html';
-        return false;
-        }
 })();

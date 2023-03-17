@@ -14,9 +14,7 @@ def New_DietForm(request):
         form = DietForm(request.POST, request.FILES)
 
         sample_file = request.FILES['Fecal_sample']
-        fs = FileSystemStorage()
-        sample_filename = fs.save(sample_file.name, sample_file)
-        file_path = fs.path(sample_filename)
+        file_path = sample_file.name
 
         if form.is_valid():
             newForm = form.save(commit=False)
@@ -32,10 +30,10 @@ def New_DietForm(request):
 
 def bracken():
     files = open('PATH.txt', 'a')
-    files.write(file_path)
+    files.write("/home/heba/Faculty/Graduation project/Auto_Diet/media/" + file_path)
     files.write("\n")
     files.close()
-    return "Uploaded Successfully"
+    return "Your Form Uploaded Successfully"
 
 
 def results(request):
